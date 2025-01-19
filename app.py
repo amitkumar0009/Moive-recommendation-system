@@ -4,10 +4,10 @@ import pandas as pd
 st.title('Movie Recommended System')
 
 
-with open('model\movies.pkl','rb') as file:
+with open('model/movies.pkl','rb') as file:
     movies=pickle.load(file)
 
-with open('model\similarity.pkl','rb') as file:
+with open('model/similarity.pkl','rb') as file:
     similarity=pickle.load(file)
 
 def recommend(movie):
